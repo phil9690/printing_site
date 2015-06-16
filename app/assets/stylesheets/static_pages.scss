@@ -5,11 +5,23 @@
 // Table of Contents
 // List of classes and ids
 //
-// 01. Colors
-// 02. Re-usable classes
-// 03. Top contact info
-// 04. Homepage banner
+// a.   Overriding styles
+// 01.  Colors
+// 02.  Re-usable classes
+// 03.  Top contact info
+// 04.  Navigation
+// 05.  Homepage banner
 
+
+// a. Overriding styles
+
+h1, h2, h3, h4, h5, span {
+  font-family: 'Oswald', sans-serif;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+}
 
 // 01. Colors
 
@@ -37,7 +49,6 @@ $curious-blue   : #3498DB;
 
 $ebony-clay     : #22313F;
 
-
 // 02. Re-usable classes
 
 .full-width {
@@ -63,13 +74,16 @@ $ebony-clay     : #22313F;
   font-size: 0.9em;
 }
 
-// 04. Hompage banner
+// 04. Navigation
+
+
+// 05. Hompage banner
 
 .home-banner-bg {
  background-color: $picton-blue;
  margin: 0;
  padding: 0;
- box-shadow: inset 0px 11px 8px -10px $ebony-clay, inset 0px -11px 8px -10px $ebony-clay; 
+ box-shadow: inset 0px 11px 8px -10px $ebony-clay, inset 0px -11px 8px -10px $curious-blue; 
 }
 
 .banner-img {
