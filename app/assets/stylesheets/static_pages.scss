@@ -1,3 +1,81 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Table of Contents
+// List of classes and ids
+//
+// 01. Colors
+// 02. Re-usable classes
+// 03. Top contact info
+// 04. Homepage banner
+
+
+// 01. Colors
+
+$white          : #FFFFFF;
+$ghost          : #FAFAFA;
+$snow           : #F9F9F9;
+$vapor          : #F6F6F6;
+$white-smoke    : #F5F5F5;
+$silver         : #EFEFEF;
+$smoke          : #EEEEEE;
+$gainsboro      : #DDDDDD;
+$iron           : #CCCCCC;
+$base           : #AAAAAA;
+$aluminum       : #999999;
+$jumbo          : #888888;
+$monsoon        : #777777;
+$steel          : #666666;
+$charcoal       : #555555;
+$tuatara        : #444444;
+$oil            : #333333;
+$jet            : #222222;
+$black          : #000000;
+$picton-blue    : #22A7F0;
+$curious-blue   : #3498DB;
+
+$ebony-clay     : #22313F;
+
+
+// 02. Re-usable classes
+
+.full-width {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+}
+
+// 03. Top contact info
+// Styling for contact info above navigation bar
+
+.top-contact-info {
+  color: $charcoal;
+  padding: 0.5em; 
+}
+
+.phone-number, .email {
+  color: $jet;
+}
+
+.contact-time {
+  font-size: 0.9em;
+}
+
+// 04. Hompage banner
+
+.home-banner-bg {
+ background-color: $picton-blue;
+ margin: 0;
+ padding: 0;
+ box-shadow: inset 0px 11px 8px -10px $ebony-clay, inset 0px -11px 8px -10px $ebony-clay; 
+}
+
+.banner-img {
+  background-image: image-url("banner_placeholder.png"); 
+  height: 400px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
