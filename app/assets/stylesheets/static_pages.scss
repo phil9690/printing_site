@@ -55,6 +55,10 @@ $curious-blue   : #3498DB;
 
 $ebony-clay     : #22313F;
 
+$google-plus    : #d34836;
+$twitter        : #4099FF;
+$facebook       : #3b5998;
+
 // 02. Re-usable classes
 
 .row {
@@ -71,7 +75,8 @@ $ebony-clay     : #22313F;
 
 .top-contact-info {
   color: $charcoal;
-  padding: 0.5em; 
+  padding: 0.5em;
+  line-height: 3em;
 }
 
 .phone-number, .email {
@@ -80,6 +85,22 @@ $ebony-clay     : #22313F;
 
 .contact-time {
   font-size: 0.9em;
+}
+
+.top-social-icons {
+  text-align: right;
+  a:before {
+    font-size: 2.5em;
+  }
+  .flaticon-google-plus {
+    color: $google-plus;
+  }
+  .flaticon-facebook {
+    color: $facebook;
+  }
+  .flaticon-twitter {
+    color: $twitter;
+  }
 }
 
 // 04. Navigation
