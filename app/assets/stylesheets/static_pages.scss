@@ -55,9 +55,12 @@ $curious-blue   : #3498DB;
 
 $ebony-clay     : #22313F;
 
-$google-plus    : #d34836;
-$twitter        : #4099FF;
-$facebook       : #3b5998;
+$google-plus        : #d34836;
+$google-plus-hover  : darken($google-plus, 10%);
+$twitter            : #4099FF;
+$twitter-hover      : darken($twitter, 10%);
+$facebook           : #3b5998;
+$facebook-hover     : darken($facebook, 10%);
 
 // 02. Re-usable classes
 
@@ -94,12 +97,21 @@ $facebook       : #3b5998;
   }
   .flaticon-google-plus {
     color: $google-plus;
+    &:hover {
+      color: $google-plus-hover;
+    }
   }
   .flaticon-facebook {
     color: $facebook;
+    &:hover {
+      color: $facebook-hover;
+    }
   }
   .flaticon-twitter {
     color: $twitter;
+    &:hover {
+      color: $twitter-hover;
+    }
   }
 }
 
