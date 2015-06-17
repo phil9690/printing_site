@@ -11,9 +11,14 @@
 // 03.  Top contact info
 // 04.  Navigation
 // 05.  Homepage banner
+// 06.  Footer
 
 
 // a. Overriding styles
+
+body {
+  font-size: 0.9em
+}
 
 h1, h2, h3, h4, h5, span {
   font-family: 'Oswald', sans-serif;
@@ -21,6 +26,7 @@ h1, h2, h3, h4, h5, span {
 
 p {
   font-family: 'Merriweather', serif;
+  font-size: 1em;
 }
 
 // 01. Colors
@@ -51,11 +57,13 @@ $ebony-clay     : #22313F;
 
 // 02. Re-usable classes
 
-.full-width {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: initial;
+.row {
+  &.full-width {
+    max-width: 100% !important;
+    .row {
+      margin: 0 auto;
+    }
+  }
 }
 
 // 03. Top contact info
@@ -80,16 +88,102 @@ $ebony-clay     : #22313F;
 // 05. Hompage banner
 
 .home-banner-bg {
- background-color: $picton-blue;
+ background: linear-gradient(to bottom, $picton-blue 0%, $curious-blue 100%);
  margin: 0;
  padding: 0;
  box-shadow: inset 0px 11px 8px -10px $ebony-clay, inset 0px -11px 8px -10px $curious-blue; 
+  max-width: 100%;
 }
 
 .banner-img {
-  background-image: image-url("banner_placeholder.png"); 
+  background-image: image-url("tshirt.png"); 
   height: 400px;
-  width: 1000px;
-  margin: 0 auto;
+  width: 396px;
+  position: relative;
+  float: right;
+}
+
+.banner-text {
+  color: $ghost;
+  font-size: 1.7em;
+  padding: 1em;
+  z-index: 10;
+  position: absolute;
+  h3 {
+    background-color: $ghost;
+    margin: 0 auto;
+    margin-bottom: 0.3em;
+    color: $picton-blue;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.2em;
+  }
+  p {
+    color: $ghost;
+    font-family: 'Merriweather', serif;
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+    line-height: 1.3em;
+  }
+}
+
+// 06. Footer
+
+.footer {
+  background-color: $oil;
+  color: $ghost;
+  //padding: 1em;
+  p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8em;
+  }
+}
+
+.footer-nav {
+  text-align: center;
+  background: $jet;
+  padding: 1em;
+  ul {
+    margin: 0;
+  }
+  li {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    padding: 0 0.5em 0 0.5em;
+  } 
+  a {
+    color: $ghost;
+    margin: 0.2em;
+    padding: 0.3em;
+    &:hover {
+      color: $picton-blue;
+    }
+  }
+}
+
+// Repsonsive styling
+
+@media screen and (max-width: 700px) {
+  .banner-img {
+    background-image: image-url("tshirt-small.png"); 
+    width: 200px;
+    height: 213px;
+    position: relative;
+  }
+  .banner-text {
+    padding: 0.2em;
+    p {
+      font-size: 0.8em;
+      padding: 0.2em;
+      margin: 0;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
 }
 
