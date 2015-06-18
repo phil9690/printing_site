@@ -12,6 +12,7 @@
 // 04.  Navigation
 // 05.  Homepage banner
 // 06.  Footer
+// 07.  Bottom contact info
 
 
 // a. Overriding styles
@@ -169,7 +170,6 @@ $facebook-hover     : darken($facebook, 10%);
 .footer {
   background-color: $oil;
   color: $ghost;
-  //padding: 1em;
   p {
     font-family: 'Ubuntu', sans-serif;
     font-size: 0.8em;
@@ -196,6 +196,30 @@ $facebook-hover     : darken($facebook, 10%);
     &:hover {
       color: $picton-blue;
     }
+  }
+}
+
+// 07. Bottom contact info
+
+.bottom-contact-info {
+  background: $gainsboro;
+  text-align: center;
+  padding: 1em;
+  i {
+    display: block;
+  }
+  i:before {
+    font-size: 3em;
+    margin-left: -5px;
+  }
+  a, span {
+    padding: 0.5em 0.2em 0.5em 0.1em;
+    font-size: 1.2em;
+    width: 100%;
+  }
+  a {
+    text-decoration: underline;
+    font-weight: 600;
   }
 }
 
