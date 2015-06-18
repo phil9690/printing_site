@@ -7,9 +7,9 @@
   </ul>
   <section class="top-bar-section">
     <ul class="right">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><%= link_to "Home", root_path %></li>
       <li class="has-dropdown">
-      <a href="#">Categories</a>
+      <%= link_to "Categories", categories_path %>
       <ul class="dropdown">
         <li><a href="#">Dye Sublimation</a></li>
         <li><a href="#">Link 2</a></li>
@@ -17,8 +17,8 @@
         <li class="active"><a href="#">Active link in dropdown</a></li>
       </ul>
       </li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><%= link_to "About", about_path %></li>
+      <li><%= link_to "Contact", contact_path %></li>
     </ul>
   </section>
 </nav>
