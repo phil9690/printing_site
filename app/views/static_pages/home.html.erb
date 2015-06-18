@@ -37,9 +37,9 @@
     sliders.push(new Slider(this))  
     })
   
-  function slide() {
-    setTimeout(slide, 4000);
+function slide() {
     sliders[0].goToNext();
+    setTimeout(slide, 5000);
   }
   slide();
 </script>
