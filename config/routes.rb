@@ -8,6 +8,11 @@ Rails.application.routes.draw do
   get 'categories' => 'static_pages#categories'
   get 'about' => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
+  get 'tshirts' => 'static_pages#tshirts'
+  get 'sublimation' => 'static_pages#sublimation'
+  get 'display' => 'static_pages#display'
+  #workwear possibly
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
