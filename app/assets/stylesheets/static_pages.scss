@@ -19,7 +19,9 @@
 // a. Overriding styles
 
 body {
-  font-size: 0.9em
+  font-size: 0.9em;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, span {
@@ -249,6 +251,12 @@ $facebook-hover     : darken($facebook, 10%);
         padding: 0;
       }
     }
+}
+
+// 09. Contact
+
+.contact {
+  padding: 1em;
 }
 
 // Repsonsive styling
