@@ -9,12 +9,13 @@
     <ul class="right">
       <li class="active"><%= link_to "Home", root_path %></li>
       <li class="has-dropdown">
-      <a href="#">Categories</a>
+      <a href="#">Services</a>
       <ul class="dropdown">
-        <li><a href="#">Dye Sublimation</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-        <li class="active"><a href="#">Active link in dropdown</a></li>
+        <li><%= link_to "T-shirt printing", tshirts_path %></li>
+        <li><%= link_to "Workwear", tshirts_path %></li>
+        <li><%= link_to "Sublimation printing", sublimation_path %></li>
+        <li><%= link_to "Display printing", display_path %></li>
+        <li><%= link_to "Charity vests", sublimation_path %></li>
       </ul>
       </li>
       <li><%= link_to "About", about_path %></li>
