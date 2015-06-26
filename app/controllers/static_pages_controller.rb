@@ -12,4 +12,13 @@ class StaticPagesController < ApplicationController
   def contact
   end
 
+  def tshirts
+  end
+
+  def sublimation
+  end
+
+  def display
+  end
+
 end
