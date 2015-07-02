@@ -13,19 +13,40 @@
 	font-family: Flaticon;
         font-size: 20px;
 font-style: normal;
-margin-left: 20px;
-}.flaticon-mail:before {
+margin-left: 0;
+}.flaticon-handshake:before {
 	content: "\e000";
 }
-.flaticon-facebook:before {
+.flaticon-clock:before {
 	content: "\e001";
 }
-.flaticon-google-plus:before {
+.flaticon-cogs:before {
 	content: "\e002";
 }
-.flaticon-phone:before {
+.flaticon-service:before {
 	content: "\e003";
 }
-.flaticon-twitter:before {
+.flaticon-mail:before {
 	content: "\e004";
+}
+.flaticon-facebook:before {
+	content: "\e005";
+}
+.flaticon-happy:before {
+	content: "\e006";
+}
+.flaticon-google-plus:before {
+	content: "\e007";
+}
+.flaticon-handshake2:before {
+	content: "\e008";
+}
+.flaticon-phone:before {
+	content: "\e009";
+}
+.flaticon-twitter:before {
+	content: "\e00a";
+}
+.flaticon-client:before {
+	content: "\e00b";
 }

@@ -16,21 +16,34 @@
 // 08.  Slider
 
 
+$light-gray     : #97aebf;
+$darker-gray    : #698092;
+$primary-color: #6bbcf9;
+$footer-gray: #303842;
 // a. Overriding styles
 
 body {
   font-size: 0.9em;
-  max-width: 1366px;
+  //max-width: 1366px;
   margin: 0 auto;
+  background: #f7fafc;
+  color: $darker-gray;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, span {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  color: $darker-gray;
 }
 
 p {
-  font-family: 'Merriweather', serif;
   font-size: 1em;
+}
+
+hr {
+  color: #698092;
+  padding: 0;
+  margin: 0;
 }
 
 // 01. Colors
@@ -75,6 +88,14 @@ $facebook-hover     : darken($facebook, 10%);
       margin: 0 auto;
     }
   }
+}
+
+.column, .columns {
+  max-width: 1200px;
+}
+
+.button {
+  box-shadow: 0 4px 0 #4b9edc;
 }
 
 // 03. Top contact info
@@ -122,16 +143,77 @@ $facebook-hover     : darken($facebook, 10%);
 // 04. Navigation
 
  .top-bar { 
- box-shadow: 0px 3px 3px 0px $ebony-clay; 
+ //box-shadow: 0px 3px 3px 0px $ebony-clay; 
+ margin: 0 auto;
+ margin-bottom: 2em;
+ padding: 1em 0 1em 0;
+ max-width: 1200px;
+ li {
+   a {
+    font-size: 1.5em;
+   }
+  h1 {
+    a {
+      color: $darker-gray !important;
+    }
+  }
+ }
+}
+
+.nav-hr {
+  max-width: 1200px;
+  background: #97aebf;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.container {
+  display: block;
+  width: 1100px;
+ border-bottom: 1px solid #97aebf;
 }
 
 // 05. Hompage banner
+
+.home-banner {
+  text-align: center;
+  max-width: 1100px;
+  margin-top: 2em;
+  img {
+    display: block;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  ul {
+    margin: 0 auto;
+    padding: 0;
+  }
+  li {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+  }
+  a {
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+}
+
+.orbit-container {
+  &:hover {
+    .orbit-prev, .orbit-next {
+      background-color: $light-gray;
+      transition: background 0.3s ease-in-out;
+      border-radius: 1em;
+    }
+  }
+}
 
 .home-banner-bg {
  background: linear-gradient(to bottom, $picton-blue 0%, $curious-blue 100%);
  margin: 0;
  padding: 0;
- box-shadow: inset 0px 11px 8px -10px $ebony-clay, inset 0px -11px 8px -10px $curious-blue; 
+ //box-shadow: inset 0px 11px 8px -10px $ebony-clay, inset 0px -11px 8px -10px $curious-blue; 
   max-width: 100%;
 }
 
@@ -144,7 +226,6 @@ $facebook-hover     : darken($facebook, 10%);
 }
 
 .banner-text {
-  color: $ghost;
   padding: 0;
   margin: 0;
   z-index: 10;
@@ -162,7 +243,6 @@ $facebook-hover     : darken($facebook, 10%);
     padding: 0.2em;
   }
   p {
-    color: $ghost;
     font-family: 'Merriweather', serif;
     margin: 0;
     padding: 0;
@@ -173,13 +253,41 @@ $facebook-hover     : darken($facebook, 10%);
 // 06. Footer
 
 .footer {
-  background-color: $oil;
-  color: $ghost;
+  background-color: $footer-gray;
+  color: $white;
+  padding: 1em;
+  h3 {
+    color: $white;
+    font-size: 1.1em;
+    padding-bottom: 0;
+  }
   p {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 0.8em;
+    font-size: 0.9em;
     padding-top: 1.2em;
   }
+  hr {
+    color: darken($darker-gray, 70%) !important;
+    background: darken($darker-gray, 70%) !important;
+  }
+  a {
+    display: block;
+  }
+}
+
+.footer-services {
+  list-style-type: none;
+  margin: 0;
+}
+
+.footer-content {
+  border-bottom: 1px solid $darker-gray;
+  margin: 0;
+  padding: 1em 0 1em 0;
+}
+
+.footer-container {
+  max-width: 1200px;
 }
 
 .footer-nav {
@@ -205,6 +313,22 @@ $facebook-hover     : darken($facebook, 10%);
   }
 }
 
+.address {
+  padding-top: 1em;
+  p {
+    padding: 0;
+    margin: 0;
+    color: $white;
+  }
+}
+
+#map {
+  height: 250px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $white;
+}
+
 // 07. Bottom contact info
 
 .bottom-contact-info {
@@ -227,6 +351,44 @@ $facebook-hover     : darken($facebook, 10%);
     text-decoration: underline;
     font-weight: 600;
   }
+}
+
+.sales-pitch {
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  h2 {
+    font-size: 1.4em;
+  }
+  img {
+    background: $primary-color;
+    border-radius: 50%;
+    padding: 1em;
+    height: 10em;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
+  p {
+    min-height: 5em;
+  }
+  i:before {
+    font-size: 7em;
+    color: $white;
+    padding: 0.3em;
+    border-radius: 50%;
+    background-color: $primary-color;
+  }
+}
+
+.services {
+  background-color: $white;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.services-container {
+  max-width: 1200px;
 }
 
 // 08. Slider
@@ -257,6 +419,21 @@ $facebook-hover     : darken($facebook, 10%);
 
 .contact {
   padding: 1em;
+}
+
+.about {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  img {
+    margin-bottom: 2em;
+    margin-top: 1em;
+  }
 }
 
 // Repsonsive styling
