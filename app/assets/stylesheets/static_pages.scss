@@ -264,6 +264,7 @@ $facebook-hover     : darken($facebook, 10%);
   background-color: $footer-gray;
   color: $white;
   padding: 1em;
+  overflow: hidden;
   h3 {
     color: $white;
     font-size: 1.1em;
