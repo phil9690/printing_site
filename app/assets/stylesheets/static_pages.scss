@@ -298,6 +298,12 @@ $facebook-hover     : darken($facebook, 10%);
   max-width: 1200px;
 }
 
+.footer-contact {
+  a:before {
+    padding-right: 0.5em;
+  }
+}
+
 .footer-nav {
   text-align: center;
   background: $jet;
