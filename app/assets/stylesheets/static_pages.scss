@@ -163,7 +163,6 @@ $facebook-hover     : darken($facebook, 10%);
   h1 {
     a {
       color: $darker-gray !important;
-      padding-bottom: 1em;
     }
   }
 }
@@ -468,6 +467,16 @@ $facebook-hover     : darken($facebook, 10%);
       padding: 0.2em;
       margin: 0;
       text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .top-bar { 
+    h1 {
+      a {
+        font-size: 1.1em;
+      }
     }
   }
 }
