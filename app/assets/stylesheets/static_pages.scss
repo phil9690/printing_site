@@ -216,6 +216,42 @@ $facebook-hover     : darken($facebook, 10%);
   }
 }
 
+#testimonials {
+  background: #f7fafc; 
+  text-align: center;
+  padding: 2em;
+  h3 {
+    font-weight: 600;
+    color: #62727e;
+    font-size: 1.8em;
+  }
+  .testimonial {
+    font-style: italic;
+  }
+  .person {
+    padding: 2em;
+  }
+  .name {
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  span {
+    display: block;
+    text-align: left;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 1em;
+  }
+  hr {
+    border: 1px solid $light-gray;
+    opacity: 0.3;
+  }
+}
+
 .home-banner-bg {
  background: linear-gradient(to bottom, $picton-blue 0%, $curious-blue 100%);
  margin: 0;
@@ -371,6 +407,7 @@ $facebook-hover     : darken($facebook, 10%);
   text-align: center;
   padding-top: 3em;
   padding-bottom: 3em;
+  background: #fff;
   h2 {
     font-size: 1.4em;
   }
@@ -395,13 +432,13 @@ $facebook-hover     : darken($facebook, 10%);
   }
 }
 
-.services {
+.services-text {
   background-color: $white;
   padding-top: 3em;
   padding-bottom: 3em;
 }
 
-.services-container {
+.services-text-container {
   max-width: 1200px;
 }
 
@@ -448,6 +485,24 @@ $facebook-hover     : darken($facebook, 10%);
   img {
     margin-bottom: 2em;
     margin-top: 1em;
+    margin-right: 1em;
+    max-width: 500px;
+    float: left;
+  }
+}
+
+.services {
+  padding: 2em;
+  img {
+    float: left;
+    max-width: 400px;
+    padding-right: 1em;
+    padding-bottom: 1em;
+  }
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 1em;
   }
 }
 
